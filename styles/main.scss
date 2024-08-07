@@ -1,0 +1,210 @@
+html, body { height: 100%; }
+
+body {
+   background:rgb(48, 48, 48);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+::-webkit-scrollbar {
+   width: 0;  /* Remove scrollbar space */
+   background: transparent;  /* Optional: just make scrollbar invisible */
+}
+@font-face {
+   font-family: "Large";
+   src: url("/fonts/Font1.woff2");
+}
+@keyframes rotateDropdown {
+   from {rotate: 0;} to {rotate: 180deg;}
+}
+
+.topbar {
+   position: absolute;
+   top: 0;
+   height: 7%;
+   width: 100%;
+   background-color: rgb(60, 64, 65);
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.topbar .logo {
+   height: 75%;
+   width: 150px;
+   position: relative;
+   margin-left: 65px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.topbar .ButtonsRight {
+   height: 75%;
+   width: 270px;
+   position: relative;
+   margin-left:15px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   .Rewards {
+      background-color: rgb(4, 225, 4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+         height: 15px;
+         width: 15px;
+         position: relative;
+         top:-6%;
+         left:-5%;
+      }
+   }
+}
+
+.topbar .ButtonsRight button {
+   height: 34px;
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(161, 161, 161);
+   padding: 10px 17px;
+   margin-left: 10px;
+   font-size: 14px;
+   color: white;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   cursor: pointer;
+}
+
+.topbar .ButtonsLeft {
+   height: 75%;
+   width: 150px;
+   position: relative;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-left: 62%;
+}
+
+.topbar .ButtonsLeft button {
+   height: 31px;
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(124, 124, 124);
+   padding: 10px 17px;
+   border: none;
+   margin-left: 10px;
+   font-size: 14px;
+   color: white;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   cursor: pointer;
+   img {
+      width: 40%;
+      height: 15px;
+   }
+}
+
+.topbar .ButtonsLeft .DropDown {
+   padding: 0px 0px;
+   width: 40px;
+}
+
+.topbar .ButtonsLeft .SignIn {background: repeating-linear-gradient(
+   45deg,
+   #c9e129,
+   #c9e129 10px,
+   #c5d43d 10px,
+   #c5d43d 20px
+ );
+}
+
+.topbar .ButtonsRight .Games {
+   color: rgba(255, 255, 255, .8);
+   svg {
+      height: auto;
+      width: 15px;
+   }
+   .newTagHolder {
+      width: 50px;
+      height: 15px;
+      rotate: 45deg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      left:42%;
+      top:12px;
+      color: black;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      background-color: rgb(253, 253, 94);
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px;
+   }
+}
+
+.round {
+   border-radius:4px;
+   border: none;
+}
+
+.topbar .ButtonsRight .Home img {
+   width: 50%;
+   height: 50%;
+}
+
+.topbar .ButtonsRight .Home {
+   padding: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 34px;
+}
+
+.slots {
+
+   width: 7.2 * 79;
+   height: 1.2 * 79;
+   
+   border: 1px solid black;
+   padding: .3 * 79;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .reel {
+
+      rotate: 90deg;
+      border: 1px solid black;
+      width: 79;
+      height: 7 * 79;
+
+      background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+      background-repeat: repeat-y;
+      background-position: 0px 0px;
+
+   }
+}
+
+.Roll {
+   height: 50px;
+   width: 150px;
+   font-size: larger;
+   cursor: pointer;
+   background-color: beige;
+}
+
+.selector {
+   height: 1.2 * 79;
+   position: relative;
+   top:-745px;
+   width: 4px;
+   background-color: blue;
+   opacity: 40%;
+   border: 2px solid black;
+}

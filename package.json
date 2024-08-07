@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "watch:scss": "node-sass -w styles/main.scss styles/cssConverters/main.css",
+    "watch:scss2": "node-sass -w styles/Cases.scss styles/cssConverters/Cases.css"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.8"
+  }
+}
